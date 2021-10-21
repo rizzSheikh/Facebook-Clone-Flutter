@@ -6,12 +6,9 @@ class CustomTabBar extends StatelessWidget {
   final int selectedIndex;
   final Function(int) onTap;
 
-  const CustomTabBar({
-    Key? key,
-    required this.icons,
-    required this.selectedIndex,
-    required this.onTap,
-  }) : super(key: key);
+  final double? iconSize;
+
+  const CustomTabBar({Key? key, required this.icons, required this.selectedIndex, required this.onTap, this.iconSize}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +23,7 @@ class CustomTabBar extends StatelessWidget {
                   icon: Icon(
                     e,
                     color: i == selectedIndex ? ColorPalette.facebookBlue : Colors.black45,
-                    size: 28.0,
+                    size: iconSize ?? 28.0,
                   ),
                 ),
               ))

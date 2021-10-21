@@ -165,7 +165,7 @@ final List<Story> stories = [
 final List<Post> posts = [
   const Post(
     user: currentUser,
-    caption: 'end game....',
+    caption: 'End Game....',
     timeAgo: '58m',
     imageUrl: "https://www.iwmbuzz.com/wp-content/uploads/2020/05/10-secret-facts-of-avengers-endgame-you-should-know-920x518.jpg",
     likes: 1202,

@@ -18,7 +18,13 @@ class _NavScreenState extends State<NavScreen> {
     Scaffold(),
   ];
 
-  final List<IconData> _icons = [Icons.home, Icons.ondemand_video, MdiIcons.accountCircleOutline, MdiIcons.bellOutline, Icons.menu];
+  final List<IconData> _icons = [
+    Icons.home,
+    Icons.ondemand_video,
+    MdiIcons.accountCircleOutline,
+    MdiIcons.bellOutline,
+    Icons.menu,
+  ];
 
   int _selectedIndex = 0;
 
@@ -33,6 +39,7 @@ class _NavScreenState extends State<NavScreen> {
         ),
         bottomNavigationBar: CustomTabBar(
           icons: _icons,
+          iconSize: 28.0,
           selectedIndex: _selectedIndex,
           onTap: (index) => setState(() => _selectedIndex = index),
         ),
